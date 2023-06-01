@@ -1,6 +1,6 @@
-// Warmup: Fibonacci
+// warmup: fibonacci
 
-// Function that returns array containing n Fibonacci sequence items without recursion
+// function that returns n lenght Fibonacci sequence array without recursion
 function fibs(n) {
   if (n === 0) {
     return [];
@@ -19,3 +19,22 @@ function fibs(n) {
   return sequence;
 }
 
+// function that returns n lenght Fibonacci sequence array with recursion
+function fibsRec(n) {
+  // base case
+  if (n <= 0) {
+    return [];
+  } else if (n === 1) {
+    return [0];
+  } else if (n === 2) {
+    return [0, 1];
+  }
+
+  // recursive case
+  var fibs = fibsRec(n - 1);
+  fibs.push(fibs[fibs.length - 1] + fibs[fibs.length - 2]);
+  return fibs;
+}
+
+let v = fibsRec(8);
+console.log(v);
