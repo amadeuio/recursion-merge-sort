@@ -36,5 +36,4 @@ function fibsRec(n) {
   return fibs;
 }
 
-let v = fibsRec(8);
-console.log(v);
+console.log(fibsRec(8));
