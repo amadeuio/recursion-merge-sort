@@ -1,41 +1,3 @@
-// warmup: fibonacci
-
-// function that returns n lenght Fibonacci sequence array without recursion
-function fibs(n) {
-  if (n === 0) {
-    return [];
-  }
-
-  if (n === 1) {
-    return [0];
-  }
-
-  let sequence = [0, 1];
-
-  for (let i = 2; i < n; i++) {
-    sequence.push(sequence[i - 1] + sequence[i - 2]);
-  }
-
-  return sequence;
-}
-
-// function that returns n lenght Fibonacci sequence array with recursion
-function fibsRec(n) {
-  // base case
-  if (n <= 0) {
-    return [];
-  } else if (n === 1) {
-    return [0];
-  } else if (n === 2) {
-    return [0, 1];
-  }
-
-  // recursive case
-  var fibs = fibsRec(n - 1);
-  fibs.push(fibs[fibs.length - 1] + fibs[fibs.length - 2]);
-  return fibs;
-}
-
 // merge sort
 
 let array = [4, 8, 6, 2, 1, 7, 5, 3];
@@ -43,9 +5,11 @@ let array = [4, 8, 6, 2, 1, 7, 5, 3];
 // function that takes in an array and returns a sorted array using a
 // recursive merge sort methodology
 function mergeSort(arr) {
+  // base case
   if (arr.length <= 1) {
     return arr;
   }
+
   // find the middle point to divide the array into two halves
   let mid = Math.floor(arr.length / 2);
 
