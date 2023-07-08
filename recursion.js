@@ -1,7 +1,5 @@
 // merge sort
 
-let array = [4, 8, 6, 2, 1, 7, 5, 3];
-
 // function that takes in an array and returns a sorted array using a
 // recursive merge sort methodology
 function mergeSort(arr) {
@@ -46,4 +44,6 @@ function merge(left, right) {
     .concat(right.slice(rightIndex));
 }
 
-mergeSort(array); // 1, 2, 3, 4, 5, 6, 7, 8
+// usage
+let array = [4, 8, 6, 2, 1, 7, 5, 3];
+console.log(mergeSort(array)); // 1, 2, 3, 4, 5, 6, 7, 8
