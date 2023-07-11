@@ -10,7 +10,7 @@ Merge Sort is a sorting algorithm that divides a list into smaller sublists, sor
 
 ### Description 📚
 
-This repo features a Merge Sort algorithm using recursion as well as an `n` length Fibonacci sequence generator using both recursion and non-recursion as a warm-up.
+This repo features a Merge Sort algorithm using recursion as well as an `n` length Fibonacci sequence generator using both a recursive and non-recursive approach as a warm-up.
 
 ### Challenges 😅
 
